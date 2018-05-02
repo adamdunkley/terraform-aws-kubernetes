@@ -1,3 +1,8 @@
+variable "aws_profile" {
+    description = "Profile to use for aws"
+    default     = "default"
+}
+
 variable "aws_region" {
     description = "Region where Cloud Formation is created"
     default     = "eu-central-1"
