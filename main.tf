@@ -5,7 +5,7 @@
 # Retrieve AWS credentials from env variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
 # Configure the AWS Provider
 provider "aws" {
-  profile = "terraform${local.environment}"
+  profile = "terraform${terraform.workspace}"
   region  = "${var.aws_region}"
 }
 
